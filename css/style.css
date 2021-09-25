@@ -440,6 +440,16 @@ textarea:focus {
   display: block;
 }
 
+.credits {
+  color: white;
+  background: none !important;
+  border: none !important;
+}
+
+.credits:hover {
+  color: blue !important;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;

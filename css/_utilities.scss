@@ -194,3 +194,12 @@ textarea{
 .show{
     display: block;
 }
+
+.credits{
+    color: white;
+    background: none !important;
+    border: none !important;
+    &:hover{
+        color: blue !important;
+    }
+}

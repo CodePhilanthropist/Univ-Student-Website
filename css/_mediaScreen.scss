@@ -1,0 +1,192 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+//================= FOR TABLEST AND IPADS ==================
+@media screen and (min-width: 600px){
+    .features{
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .services{
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .clients{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact{
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+//================= FOR NOTEBOOKS AND LAPTOPS ==============
+@media screen and (min-width: 768px){
+    header{
+        height: auto;
+        .menu-bar{
+            display: none !important;
+        }
+        ul{
+            li:not(:last-child){
+                display: block !important;
+            }
+            a:not(#hide-nav){
+                display: block;
+            }
+        }
+    }
+    .modal-header{
+        display: none !important; 
+    }
+    .hero-container{
+        section:first-child{
+            h1{
+                font-size: 3.3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }    
+    .team{
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .blog{
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
+
+//================= FOR DESKTOPS AND LARGER LAPTOPS ========
+@media screen and (min-width: 992px){
+    header{
+        ul{
+            li{
+                &:last-child{
+                    display: block !important;
+                    float: right !important;
+                    margin-right: 5rem !important;
+                }
+            }
+        }
+    }
+    .hero-container{
+        grid-template-columns: 2fr 1fr;
+        section:first-child{
+            h1{
+                font-size: 3.5rem !important;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+    .features{
+        section:nth-child(2){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .explainer{
+        section:first-child{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        section:nth-child(2){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .services{
+        section:nth-child(2){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .clients{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .team{
+        section:nth-child(2){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .contact{
+        section:first-child{
+            grid-template-columns: 2fr 1fr;
+        }
+        section:nth-child(2){
+            grid-template-columns: repeat(3, 1fr);
+        }   
+    }
+}
+
+
+//================= ONLY USED FOR THE GRID SYSTEM OF BLOG AREA ========
+@media screen and (min-width: 1150px){
+    
+    .blog{
+        section:nth-child(2){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+//================= FOR DESKTOPS AND LARGER SCREENS ========
+@media screen and (min-width: 1200px){
+    .hero{
+        background: url('../images/hero-bg.svg') !important;
+        background-size: cover !important;
+    }
+    header{
+        ul{
+            #hide-nav{
+                display: block;
+            }
+        }
+    }
+    .hero-container{
+        section:first-child{
+            h1{
+                font-size: 4rem !important;
+            }
+        }
+    }
+    .features{
+        height: 95vh;
+        padding-bottom: 5vh;
+        section:nth-child(2){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .services{
+        height: 100vh;
+        section:nth-child(2){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .team{
+        section:nth-child(2){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .contact{
+        section:first-child{
+            article:first-child{
+                div:nth-child(2){
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+    .contact{
+        section:nth-child(2){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

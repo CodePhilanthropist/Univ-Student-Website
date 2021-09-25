@@ -1,0 +1,196 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+//========================= FONTS CLASS ==================
+
+.nav-p{
+    @include casual-text(1rem, $title-skin, 400);
+}
+
+.headliner{
+    @include casual-text(4rem, $title-skin, 700);
+    text-align: left !important;
+}
+
+.sub-headliner{
+    @include casual-text(1.25rem, $title-skin, 300);
+    text-align: left !important;
+    line-height: 1.2;
+}
+
+.titler{
+    @include casual-text(2.4rem, black, 700);
+    margin: 6rem 0 .5rem 0;
+}
+
+.sub-titler{
+    @include casual-text(1.15rem, $caption-skin, 300);
+    margin-bottom: 1rem;
+}
+
+.context-title{
+    @include casual-text(1.5rem, black, 700);
+    margin: .5rem 0 .5rem 0;
+}
+
+.sub-context-title{
+    @include casual-text(1rem, $caption-skin, 300);
+}
+
+.facts-number{
+    @include casual-text(4rem, $title-skin, 700);
+}
+
+.facts-label{
+    @include casual-text(1.3rem, $title-skin, 700);
+}
+
+.team-label{
+    @include casual-text(1rem, $caption-skin, 500);
+    line-height: 1.4;
+    margin-bottom: .5rem;
+}
+
+.blog-details{
+    font-family: $secondary-p;
+    color: $caption-skin;
+}
+
+.blog-title{
+    @include casual-text(1.5rem, $caption-skin, 700);
+    margin: .5rem 0 .5rem 0;
+    &:hover{
+        color: $prime-skin;
+    }
+}
+
+.footer-title{
+    @include casual-text(1rem, grey, 600);
+    text-align: left;
+    margin-top: .5rem !important;
+    margin-bottom: 1.5rem !important;
+    margin-left: 1rem;
+}
+
+.footer-text{
+    @include casual-text(14px, $title-skin, 600);
+    padding-top: 30px;
+}
+
+.footer-sub-text{
+    @include casual-text(13px, $title-skin, 400);
+    padding: 6px;
+    a{
+        color: $title-skin;
+    }
+}
+//========================= INPUT CLASS ==================
+textarea{
+    width: 100%;
+    height: 12rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: $prime-p;
+    font-size: 14px;
+    overflow: auto;
+    resize: vertical;
+    &:focus{
+        border-color: $prime-skin;
+    }
+}
+.text-input{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: $prime-p;
+    font-size: 14px;
+    &:focus{
+        border-color: $prime-skin;
+    }
+}
+
+//========================= BUTTONS CLASS ==================
+
+.btn{
+    @include btn($prime-skin, 1.5rem, 1rem);
+    &:hover{
+        background: $prime-skin;
+        color: white;
+    }
+}
+
+.reverse-btn{
+    @include reverse-btn($prime-skin, 1.5rem, 1rem);
+    &:hover{
+        background: $title-skin;
+        border: 1px solid $prime-skin;
+        color: $prime-skin;
+    }
+}
+
+//======================= FOR TOGGLING THE NAV MENU ================
+.modal-header{
+    @include casual-text(1rem, $title-skin, 500);
+    text-align: left;
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    display: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    ul{
+        padding: 2rem;
+        li{
+            a{
+                font-size: 1rem;
+                display: block;
+                position: relative;
+                color: #0665b7;
+                padding: 10px 20px;
+                font-weight: 500;
+                outline: none;
+            }
+        }
+    }
+}
+
+//======================= TO SHOW THE NAV-MENU ================
+.activate{
+    background: $prime-skin;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+//======================= GUMSHOE CONFIGURATIONS ================
+.gumshoe li.active a {
+    font-weight: 700 !important;
+    span {
+        &:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+
+}
+
+//======================= TO SHOW THE NAV-MENU ================
+
+.show{
+    display: block;
+}

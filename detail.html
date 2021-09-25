@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------------------Vendor CSS Files --------------------->
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Digitima</title>
+</head>
+
+<body>
+    <!-- This is the hero area -->
+    <div class="hero-x" id="home">
+        <header class="aborp">
+            <div class="menu-bar">
+                <div class="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <ul class="gumshoe">
+                <li><a href="#home" class="nav-p"><span>Home</span></a></li>
+                <li><a href="#features" class="nav-p"><span>Features</span></a></li>
+                <li><a href="#services" class="nav-p"><span>Services</span></a></li>
+                <li><a href="#team" class="nav-p"><span>Team</span></a></li>
+                <li><a href="#blog" class="nav-p"><span>Blog</span></a></li>
+                <li><a href="#contact" class="nav-p"><span>Contact</span></a></li>
+                <li><a href="" class="nav-p" id="hide-nav"><span>Get Started</span></a></li>
+            </ul>
+        </header>
+        <div class="modal-header" id="modal-header">
+            <ul>
+                <li><a onclick="onClickMenu()" href="#home"><span>Home</span></a></li>
+                <li><a onclick="onClickMenu()" href="#features"><span>Features</span></a></li>
+                <li><a onclick="onClickMenu()" href="#services"><span>Services</span></a></li>
+                <li><a onclick="onClickMenu()" href="#team"><span>Team</span></a></li>
+                <li><a onclick="onClickMenu()" href="#blog"><span>Blog</span></a></li>
+                <li><a onclick="onClickMenu()" href="#contact"><span>Contact</span></a></li>
+            </ul>
+        </div>
+        <div class="hero-content">
+            <section>
+                <article>
+                    <div>
+                        <img src="images/blog-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="context-title">Ang binakol nga bata kay nadagma didtos unahan katawaa lage nako</h1>
+                        <ul class="bx-ul">
+                            <li><i class="bx bxs-user"></i>
+                                <p class="blog-details">Poor Coder</p>
+                            </li>
+                            <li><i class="bx bxs-calendar"></i>
+                                <p class="blog-details">June 5, 2020</p>
+                            </li>
+                        </ul>
+                        <p class="sub-context-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae esse ipsum magnam quo placeat recusandae ad non incidunt suscipit in nobis fuga, beatae impedit quia perferendis error numquam animi aut dignissimos voluptates odit libero doloribus obcaecati. Veniam dicta placeat expedita voluptatum nesciunt rerum distinctio exercitationem itaque autem vero earum mollitia ut, quasi, aliquam voluptate laudantium cum facere porro labore iusto quis quaerat. Ad perferendis consequatur cum, eius, libero tempora tempore perspiciatis inventore praesentium ullam voluptate, nobis odit sapiente at corrupti quam ipsam accusamus beatae aliquid cumque! Eveniet nostrum voluptate, debitis optio velit, assumenda aliquam eaque eligendi repudiandae doloribus sunt.</p>
+                    </div>
+                </article>
+            </section>
+            <section></section>
+        </div>
+    </div>
+
+    
+    <!-- This is the contact area -->
+    <div class="contact container" id="contact">
+        <section>
+            <article>
+                <h1 class="context-title" data-aos="fade-up">Get in Touch</h1>
+                <form action=""  data-aos="fade-right" data-aos-delay="100">
+                    <textarea name="rian" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                    <div>
+                        <input type="text" name="" class="text-input" id="" placeholder="Enter Name">
+                        <input type="text" name="" class="text-input" id="" placeholder="Enter Email">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="" class="text-input" placeholder="Enter Subject">
+                    </div>
+                    <div>
+                        <input type="submit" value="Send" class="reverse-btn">
+                    </div>
+                </form>
+            </article>
+            <article>
+                <ul data-aos="fade-left" data-aos-delay="200">
+                    <li>
+                        <div>
+                            <a href=""><i class="bx bxs-map bx-border-circle"></i></a>
+                        </div>
+                        <div>
+                            <h1 class="context-title">Location:</h1>
+                            <p class="sub-context-title">Cebu, Philippines</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href=""><i class="bx bxs-envelope bx-border-circle"></i></a>
+                        </div>
+                        <div>
+                            <h1 class="context-title">Email:</h1>
+                            <p class="sub-context-title">info@example.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href=""><i class="bx bxs-phone bx-border-circle"></i></a>
+                        </div>
+                        <div>
+                            <h1 class="context-title">Call:</h1>
+                            <p class="sub-context-title">+1 5589 55488 55s</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1 class="context-title">Digitalized</h1>
+                <p class="sub-context-title">
+                    Sector 6, Pagsabungan <br>
+                    Mandaue City, Cebu 6014
+                    Philippines
+                </p>
+                <ul>
+                    <li><a href=""><i class="bx bxl-twitter bx-border-circle"></i></a></li>
+                    <li><a href=""><i class="bx bxl-facebook bx-border-circle"></i></a></li>
+                    <li><a href=""><i class="bx bxl-instagram bx-border-circle"></i></a></li>
+                    <li><a href=""><i class="bx bxl-linkedin bx-border-circle"></i></a></li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="footer-title">Our Services</h2>
+                <ul class="bx-ul">
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Web Development</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Mobile Development</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Email Marketing</a></li><br>  
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Social Media Marketing</a></li><br>  
+                </ul>
+            </article>
+            <article>
+                <h2 class="footer-title">Support Services</h2>
+                <ul class="bx-ul">
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Content Management</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">24/7 Chat Support</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Product Management</a></li><br>  
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Website Copywriting</a></li><br>  
+                </ul>
+            </article>
+            <article>
+                <h2 class="footer-title">About Company</h2>
+                <ul class="bx-ul">
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Featured Services</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">See our Stories</a></li><br>
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">Facts About Us</a></li><br>  
+                    <li><i class="bx bx-chevron-right"></i><a href="" class="sub-context-title">How it works</a></li><br>  
+                </ul>
+            </article>
+        </section>
+    </div>
+    <div class="footer">
+        <p class="footer-text">© Copyright <b>Digitima.</b> All Rights Reserved</p>
+        <p class="footer-sub-text">Designed by <a href="">Poor Coder</a></p>   
+    </div>
+    <!-- Vendor Javascript Files -->
+    <script src="vendor/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="vendor/smooth scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+
+    <!-- Main Javascript Files -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

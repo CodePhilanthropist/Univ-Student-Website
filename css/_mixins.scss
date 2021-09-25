@@ -1,0 +1,47 @@
+@import '../css/variables';
+//========================= FONT CONFIGURATION ==================
+@mixin casual-text($size, $color, $weight) {
+    font-family: $prime-p;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: 1.1;
+    color: $color;
+    text-align: center;
+}
+
+//========================= BUTTON CONFIGURATION ==================
+@mixin btn($color, $x-padding, $y-padding) {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: $y-padding $x-padding;
+    border-radius: 50px;
+    color: $color;
+    transition: all .5s;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border: 1px solid $color;
+}
+@mixin reverse-btn($color, $x-padding, $y-padding) {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: $y-padding $x-padding;
+    border-radius: 50px;
+    color: $title-skin;
+    background: $color;
+    transition: all .5s;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border:none;
+}
+
+//========================= INITIALIZING .container ==================
+@mixin container($color) {
+    width: 100%;
+    background: $color;
+}

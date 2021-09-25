@@ -132,10 +132,6 @@
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
-  .team section:nth-child(2) {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
   .contact section:first-child article:first-child div:nth-child(2) {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);

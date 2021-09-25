@@ -170,11 +170,11 @@
             grid-template-columns: repeat(4, 1fr);
         }
     }
-    .team{
-        section:nth-child(2){
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
+    // .team{
+    //     section:nth-child(2){
+    //         grid-template-columns: repeat(5, 1fr);
+    //     }
+    // }
     .contact{
         section:first-child{
             article:first-child{

@@ -12,7 +12,7 @@ A student dev website for Mr. Leodivino Lawas' discussion for ELEC 1 subject in 
 Clone this repository
 
 ```bash
-git clone https://github.com/CodePhilanthropist/Basic-HTML-Template
+https://github.com/CodePhilanthropist/Univ-Student-Website
 ```
 
 ## Screenshot

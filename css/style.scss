@@ -1,4 +1,4 @@
-@import "../css/mediaScreen";
+// @import "../css/mediaScreen";
 @import "../css/variables";
 @import "../css/utilities";
 @import "../css/mixins";
@@ -294,9 +294,9 @@
   place-items: center;
   background: $second-background-skin;
   section:nth-child(2) {
-    display: grid;
+    display: flex;
     width: 90%;
-    grid-gap: 1.5rem;
+    gap: 1.5rem;
     place-items: center;
     margin-bottom: 1rem;
     article {
@@ -327,17 +327,18 @@
   display: flex;
   flex-direction: column;
   section:first-child {
-    display: grid;
+    display: flex;
     padding: 1rem;
-    align-items: center;
-    justify-items: center;
+    place-items: center;
+    place-content: center;
     article:first-child {
+      
       img {
         width: 100%;
       }
     }
     article:nth-child(2) {
-      width: 77%;
+        
       h1 {
         text-align: left !important;
         margin: 0 0 0.5rem 0;
@@ -348,11 +349,12 @@
     }
   }
   section:nth-child(2) {
-    display: grid;
+    display: flex;
     padding: 1rem;
     place-items: center;
+    place-content: center;
     article:first-child {
-      width: 77%;
+      
       h1 {
         text-align: left !important;
         margin: 0 0 0.5rem 0;
@@ -376,9 +378,9 @@
   grid-gap: 1rem;
   place-items: center;
   section:nth-child(2) {
-    display: grid;
+    display: flex;
     padding: 2rem;
-    grid-gap: 2rem;
+    gap: 1rem;
     place-items: center;
     article {
       padding: 3rem;
@@ -411,7 +413,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem !important;
-  display: grid;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 6rem;
   section {
     display: flex;
     align-items: center;
@@ -480,8 +485,9 @@
   display: flex;
   flex-direction: column;
   section:nth-child(2) {
-    display: grid;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
     box-sizing: border-box;
     padding: 2rem;
     article {
@@ -521,7 +527,7 @@
   overflow-x: hidden;
   display: grid;
   section:first-child {
-    display: grid;
+    display: flex;
     margin-top: 6rem;
     article:first-child {
       padding: 2rem;

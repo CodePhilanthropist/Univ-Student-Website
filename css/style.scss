@@ -109,24 +109,32 @@
     }
   }
   .hero-container {
-    display: grid;
+    display: flex;
     place-items: center;
+    place-content: center;
     width: 87%;
     margin: 0 auto;
-    section:first-child {
+    section:nth-child(2) {
       display: grid;
       grid-gap: 1rem;
+      width: 80%;
       h1 {
         font-size: 2.5rem;
+        #dot{
+          color: $nice-skin;
+        }
       }
       p {
         font-size: 1.09rem;
       }
       a {
         border: 1px solid $title-skin;
+        
         background: none;
         &:hover {
-          background: $title-skin;
+          background: $nice-skin;
+          color: white;
+          border: 1px solid $nice-skin;
         }
       }
       .tongkoy {
@@ -140,12 +148,21 @@
             border-radius: 50%;
             color: #0665b7;
             margin-bottom: 2rem;
+            &:hover{
+              background: $nice-skin;
+              color: #ecf6fe;
+            }
           }
         }
       }
     }
-    section:nth-child(2) {
-      display: none;
+    section:first-child {
+      display: flex;
+      place-content: center;
+      img {
+        width: 64%;
+        border-radius: 50%;
+      }
     }
   }
 }

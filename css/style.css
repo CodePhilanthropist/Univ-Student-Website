@@ -282,11 +282,11 @@ textarea:focus {
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.gumshoe li.active a {
+.angkabayo li.active a {
   font-weight: 700 !important;
 }
 
-.gumshoe li.active a span:before {
+.angkabayo li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -432,42 +432,51 @@ textarea:focus {
 }
 
 .hero .hero-container {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   place-items: center;
+  place-content: center;
   width: 87%;
   margin: 0 auto;
 }
 
-.hero .hero-container section:first-child {
+.hero .hero-container section:nth-child(2) {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
+  width: 80%;
 }
 
-.hero .hero-container section:first-child h1 {
+.hero .hero-container section:nth-child(2) h1 {
   font-size: 2.5rem;
 }
 
-.hero .hero-container section:first-child p {
+.hero .hero-container section:nth-child(2) h1 #dot {
+  color: #FF5959;
+}
+
+.hero .hero-container section:nth-child(2) p {
   font-size: 1.09rem;
 }
 
-.hero .hero-container section:first-child a {
+.hero .hero-container section:nth-child(2) a {
   border: 1px solid #fff;
   background: none;
 }
 
-.hero .hero-container section:first-child a:hover {
-  background: #fff;
+.hero .hero-container section:nth-child(2) a:hover {
+  background: #FF5959;
+  color: white;
+  border: 1px solid #FF5959;
 }
 
-.hero .hero-container section:first-child .tongkoy a {
+.hero .hero-container section:nth-child(2) .tongkoy a {
   border: none !important;
   background: none;
 }
 
-.hero .hero-container section:first-child .tongkoy a i {
+.hero .hero-container section:nth-child(2) .tongkoy a i {
   background: #ecf6fe;
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -476,8 +485,21 @@ textarea:focus {
   margin-bottom: 2rem;
 }
 
-.hero .hero-container section:nth-child(2) {
-  display: none;
+.hero .hero-container section:nth-child(2) .tongkoy a i:hover {
+  background: #FF5959;
+  color: #ecf6fe;
+}
+
+.hero .hero-container section:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+
+.hero .hero-container section:first-child img {
+  width: 64%;
+  border-radius: 50%;
 }
 
 .hero-x {

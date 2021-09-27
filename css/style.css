@@ -1063,7 +1063,9 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  grid-gap: 1rem;
+  place-content: center;
+  place-items: center;
+  gap: 6rem;
 }
 
 .contact section:nth-child(2) article:first-child h1 {

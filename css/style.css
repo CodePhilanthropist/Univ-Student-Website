@@ -545,7 +545,7 @@ textarea:focus {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4AE3B5;
+  background-color: #4ae3b5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -604,6 +604,20 @@ textarea:focus {
 
 .hero .hero-container section:first-child a:hover {
   background: #fff;
+}
+
+.hero .hero-container section:first-child .tongkoy a {
+  border: none !important;
+  background: none;
+}
+
+.hero .hero-container section:first-child .tongkoy a i {
+  background: #ecf6fe;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: #0665b7;
+  margin-bottom: 2rem;
 }
 
 .hero .hero-container section:nth-child(2) {
@@ -704,7 +718,7 @@ textarea:focus {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4AE3B5;
+  background-color: #4ae3b5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -852,7 +866,7 @@ textarea:focus {
 
 .explainer section:first-child article:nth-child(2) h1 {
   text-align: left !important;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .explainer section:first-child article:nth-child(2) p {
@@ -872,7 +886,7 @@ textarea:focus {
 
 .explainer section:nth-child(2) article:first-child h1 {
   text-align: left !important;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .explainer section:nth-child(2) article:first-child p {
@@ -920,7 +934,7 @@ textarea:focus {
 
 .services section:nth-child(2) article i {
   background: #186de5;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 3.5rem;
   border-radius: 50%;
   color: #fff;
@@ -995,12 +1009,12 @@ textarea:focus {
 .team section:nth-child(2) article div:first-child img {
   width: 150px;
   border-radius: 50%;
-  border: .7rem solid #ecf6fe;
+  border: 0.7rem solid #ecf6fe;
 }
 
 .team section:nth-child(2) article div:nth-child(2) div {
   height: 40px;
-  margin: .4rem 0 .5rem 0;
+  margin: 0.4rem 0 0.5rem 0;
 }
 
 .team section:nth-child(2) article div:nth-child(2) div i {
@@ -1015,8 +1029,8 @@ textarea:focus {
 .team section:nth-child(2) article div:nth-child(2) div i:hover {
   background: #0665b7;
   color: white;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .blog {
@@ -1094,8 +1108,8 @@ textarea:focus {
 
 .contact section:first-child article:first-child h1 {
   color: #777;
-  margin-top: .5rem !important;
-  margin-bottom: .5rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .contact section:first-child article:first-child form {
@@ -1136,7 +1150,7 @@ textarea:focus {
 }
 
 .contact section:first-child article:nth-child(2) ul li {
-  padding: .5rem 0 .5rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,7 +1168,7 @@ textarea:focus {
   color: #186de5;
   background: #ecf6fe;
   border: none;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 .contact section:first-child article:nth-child(2) ul li div:first-child a:hover i {
@@ -1190,7 +1204,7 @@ textarea:focus {
 
 .contact section:nth-child(2) article:first-child p {
   text-align: left;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact section:nth-child(2) article:first-child ul li {
@@ -1209,11 +1223,15 @@ textarea:focus {
   background: grey;
 }
 
-.contact section:nth-child(2) article:nth-child(2) ul li i, .contact section:nth-child(2) article:nth-child(3) ul li i, .contact section:nth-child(2) article:nth-child(4) ul li i {
+.contact section:nth-child(2) article:nth-child(2) ul li i,
+.contact section:nth-child(2) article:nth-child(3) ul li i,
+.contact section:nth-child(2) article:nth-child(4) ul li i {
   color: #186de5;
 }
 
-.contact section:nth-child(2) article:nth-child(2) ul li a:hover, .contact section:nth-child(2) article:nth-child(3) ul li a:hover, .contact section:nth-child(2) article:nth-child(4) ul li a:hover {
+.contact section:nth-child(2) article:nth-child(2) ul li a:hover,
+.contact section:nth-child(2) article:nth-child(3) ul li a:hover,
+.contact section:nth-child(2) article:nth-child(4) ul li a:hover {
   color: #186de5;
 }
 

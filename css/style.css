@@ -313,7 +313,6 @@ textarea:focus {
   background: #186de5;
   width: 100%;
   height: 100vh;
-  background-size: cover;
 }
 
 .hero header {

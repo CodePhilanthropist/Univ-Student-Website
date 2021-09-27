@@ -13,11 +13,156 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- AOS -->
-    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <!-- <link rel="stylesheet" href="vendor/aos/aos.css"> -->
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <title>Rian Barriga - Portfolio</title>
+    <style>
+        @media screen and (min-width: 600px) {
+  .features section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .services section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .clients {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: auto;
+  }
+  header .menu-bar {
+    display: none !important;
+  }
+  header ul li:not(:last-child) {
+    display: block !important;
+  }
+  header ul a:not(#hide-nav) {
+    display: block;
+  }
+  .modal-header {
+    display: none !important;
+  }
+  .hero-container section:first-child h1 {
+    font-size: 3.3rem;
+  }
+  .hero-container section:first-child p {
+    font-size: 2rem;
+  }
+  .team section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .blog section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header ul li:last-child {
+    display: block !important;
+    float: right !important;
+    margin-right: 5rem !important;
+  }
+  .hero-container {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .hero-container section:first-child h1 {
+    font-size: 3.5rem !important;
+  }
+  .hero-container section:first-child p {
+    font-size: 2rem;
+  }
+  .features section:nth-child(2) {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .explainer section:first-child {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .explainer section:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .services section:nth-child(2) {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .clients {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .team section:nth-child(2) {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .contact section:first-child {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .contact section:nth-child(2) {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .blog section:nth-child(2) {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-size: cover !important;
+  }
+  header ul #hide-nav {
+    display: block;
+  }
+  .hero-container section:first-child h1 {
+    font-size: 4rem !important;
+  }
+  .features {
+    height: 95vh;
+    padding-bottom: 5vh;
+  }
+  .features section:nth-child(2) {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .services {
+    height: 100vh;
+  }
+  .services section:nth-child(2) {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .contact section:first-child article:first-child div:nth-child(2) {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact section:nth-child(2) {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+    </style>
 </head>
 
 <body>

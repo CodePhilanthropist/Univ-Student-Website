@@ -531,6 +531,7 @@
     margin-top: 6rem;
     article:first-child {
       padding: 2rem;
+      width: 70%;
       h1 {
         color: $caption-skin;
         margin-top: 0.5rem !important;
@@ -541,8 +542,11 @@
 
         div:first-of-type {
           margin-top: 1rem;
-          display: grid;
-          grid-gap: 1rem;
+          display: flex;
+          gap: 1rem;
+          input{
+            width: 100%;
+          }
         }
         div:nth-of-type(2) {
           margin-top: 1rem;
@@ -601,7 +605,7 @@
   section:nth-child(2) {
     background: $footer-skin;
     padding: 5rem;
-    display: grid;
+    display: flex;
     grid-gap: 1rem;
     article:first-child {
       h1 {

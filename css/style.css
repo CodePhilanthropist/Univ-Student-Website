@@ -966,6 +966,7 @@ textarea:focus {
 
 .contact section:first-child article:first-child {
   padding: 2rem;
+  width: 70%;
 }
 
 .contact section:first-child article:first-child h1 {
@@ -980,9 +981,14 @@ textarea:focus {
 
 .contact section:first-child article:first-child form div:first-of-type {
   margin-top: 1rem;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact section:first-child article:first-child form div:first-of-type input {
+  width: 100%;
 }
 
 .contact section:first-child article:first-child form div:nth-of-type(2) {
@@ -1054,8 +1060,9 @@ textarea:focus {
 .contact section:nth-child(2) {
   background: #f1f8ff;
   padding: 5rem;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-gap: 1rem;
 }
 
